@@ -1,0 +1,115 @@
+
+
+*{
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding:0;
+    background-image: url(top-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 54px;
+  }
+  
+  section{
+    padding:40px 100px ;
+  }
+  .text-color {
+    color: dodgerblue;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-block {
+    width: 50%;
+    padding: 25px;
+  }
+  .first-block p{
+    margin-bottom: 35px;
+  }
+  .first-block img {
+    width: 100%;
+  }
+  .click-link {
+    text-decoration: none;
+    background-image: linear-gradient(to right, deepskyblue, dodgerblue);
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+  .career-dream {
+    background-image: url(dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom 25%;
+  }
+  .exp-block {
+    background-image: url(exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom 70%;
+  }
+  .exp-item {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    border-radius: 5px;
+  }
+  #graphic-exp {
+    border-left: 6px solid;
+    border-image: linear-gradient(deepskyblue, dodgerblue);
+    border-image-slice: 33;
+    margin: 10px;
+    padding: 20px;
+  }
+  #junior-exp {
+    margin: 10px;
+    padding: 20px;
+    border-left: 6px solid;
+    border-image: linear-gradient(magenta, dodgerblue);
+    border-image-slice: 33;
+  }
+  footer p {
+    text-align: center;
+  }
+  
+  
+  @media (max-width:724px){
+    section{
+      margin-top: 20px;
+      padding: 40px 30px;
+    }
+    p{
+      text-align: justify;
+    }
+    .flex-container{
+      flex-direction: column-reverse;
+    }
+    .first-block{
+      width: 100%;
+    }
+    .first-block p{
+      margin-bottom: 50px;
+    }
+    h1{
+      font-size: 2em;
+    }
+    .first-block img{
+      width: 95%;
+    }
+    .exp-block{
+      padding: 25px;
+    }
+    .exp-item{
+      width: 100%;
+    }
+    #graphic-exp{
+      background-color: #fff;
+    }
+  }
